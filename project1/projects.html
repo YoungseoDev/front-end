@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Youngseo Choi — backend and AI/ML work." />
+  <title>Projects — Youngseo Choi</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">YC</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Projects</h1>
+      <p>
+        A selection of my recent work across backend and AI/ML. 
+        I enjoy building scalable APIs, integrating data pipelines, and shipping features end to end.
+      </p>
+    </section>
+
+    <section class="projects-list">
+      <article class="project">
+        <h2>Try‑On AI App</h2>
+        <p>
+          The application was built using Flutter and Firebase.
+        </p>
+        <ul>
+          <li>Tech: Spring Boot, PyTorch, REST, JWT</li>
+          <li>Focus: model integration and backend robustness</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <h2>ValanSe Backend</h2>
+        <p>
+          Team project scaffolding a full-stack service using a modern stack and cloud infra (ALB, RDS, containers). 
+          Contributed to ERD, repository patterns, and auth.
+        </p>
+        <ul>
+          <li>Tech: Spring Boot, AWS (ALB, RDS), Docker</li>
+          <li>Focus: architecture and reliability</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <h2>AI Coursework — CS 188</h2>
+        <p>
+          Implemented classic AI algorithms (search, CSPs, MDPs, adversarial search) in Python.
+          Focused on correctness, heuristics, and clean abstractions.
+        </p>
+        <ul>
+          <li>Tech: Python</li>
+          <li>Focus: algorithm design and analysis</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="resume-cta">
+      <a class="btn primary" href="#" onclick="alert('Resume available upon request.'); return false;">Request Resume</a>
+      <a class="btn" href="index.html">← Back to Home</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Youngseo Choi — Projects</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

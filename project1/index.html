@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal website of Youngseo Choi, a Computer Science student at Soongsil University and visiting student at UC Berkeley." />
+  <meta name="author" content="Youngseo Choi" />
+  <meta name="keywords" content="Youngseo Choi, Computer Science, UC Berkeley, Soongsil University, Full-Stack, Backend, AI" />
+  <title>Youngseo Choi — Personal Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">YC</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1 id="greeting">Hello!</h1>
+        <p>
+          I'm <strong>Youngseo Choi</strong>, a Computer Science major at <strong>Soongsil University</strong> (South Korea) and a visiting student at <strong>UC Berkeley</strong>. 
+          I aspire to become a <strong>full‑stack developer</strong> with a strong interest in <strong>backend</strong> systems and <strong>AI/ML</strong> projects.
+        </p>
+        <ul class="bullets">
+          <li>Interests: algorithms, scalable backend systems, human‑centered product design</li>
+          <li>Hobbies: watching music‑driven films and traveling</li>
+          <li>Career goal: build reliable services that help people every day</li>
+        </ul>
+        <div class="hero-cta">
+          <a class="btn primary" href="projects.html">See my projects</a>
+          <a class="btn" href="#travel">Travel gallery</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="images/profile.jpg" />
+        <!-- <figcaption>Building, breaking, and learning—one project at a time.</figcaption> -->
+      </figure>
+    </section>
+
+    <section id="hobbies" class="card-grid">
+      <h2>Hobbies</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="images/Begin_Again_film_poster_2014.jpg" alt="poster of Begin again" />
+          <div class="card-body">
+            <h3>Music‑Driven Films</h3>
+            <p>
+              I love films with unforgettable music—like <em>Begin Again</em> and <em>Les Misérables</em>. 
+              They remind me how storytelling and sound can move people.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/travel.jpg" alt="Airplane" />
+          <div class="card-body">
+            <h3>Travel</h3>
+            <p>I enjoy visiting new places and learning their histories and cultures.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="travel" class="gallery">
+      <h2>Travel Gallery</h2>
+      <p class="muted">Places I've visited:</p>
+      <div class="grid">
+        <!-- At least 5 images across the site (we already have 4 above; add more here) -->
+        <figure>
+          <img src="images/osaka.jpg" alt="Osaka" />
+          <figcaption>Japan — Osaka</figcaption>
+        </figure>
+        <figure>
+          <img src="images/london.jpg" alt="London" />
+          <figcaption>United Kingdom — London</figcaption>
+        </figure>
+        <figure>
+          <img src="images/paris.jpg" alt="Paris" />
+          <figcaption>France — Paris</figcaption>
+        </figure>
+        <figure>
+          <img src="images/vienna.jpg" alt="Vienna" />
+          <figcaption>Austria — Vienna</figcaption>
+        </figure>
+      
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p class="muted">Send me a message—this demo form doesn't have server now.</p>
+      <form id="contactForm">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <!-- rows 5는 기본 줄 수 를 의미한다 -->
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+        <button class="btn primary" type="submit">Send</button>
+        <p id="formStatus" class="status" ></p>
+      </form>
+    </section>
+  </main>
+<!-- footer는 웹페이지나 문서 또는 섹션의 마지막 부분을 표현할 때때 사용한다. -->
+  <footer class="site-footer">
+    <!-- span은 의미가 없는 인라인 컨테이너 이다.--> 
+    <p>© <span id="year"></span> Youngseo Choi — Soongsil University · UC Berkeley.</p>
+    <a href="projects.html">Projects</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
